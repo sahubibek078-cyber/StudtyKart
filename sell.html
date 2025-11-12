@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Books | StudyKart</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .sell-container {
+      max-width: 600px;
+      background: white;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #007bff;
+    }
+
+    label {
+      font-weight: 500;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border: 1.5px solid #ccc;
+      border-radius: 6px;
+      outline: none;
+      margin-bottom: 15px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007bff;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">📚 StudyKart</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="sell.html">Sell</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="sell-container">
+    <h2>Sell Your Books or Notes</h2>
+    <form id="sellForm">
+      <label>Book / Notes Title:</label>
+      <input type="text" placeholder="Enter title" required>
+
+      <label>Description:</label>
+      <textarea rows="4" placeholder="Describe your book or notes..." required></textarea>
+
+      <label>Category:</label>
+      <select required>
+        <option value="">Select Category</option>
+        <option>Engineering</option>
+        <option>Medical</option>
+        <option>School</option>
+        <option>Other</option>
+      </select>
+
+      <label>Condition:</label>
+      <select required>
+        <option>New</option>
+        <option>Used - Like New</option>
+        <option>Used - Good</option>
+        <option>Used - Fair</option>
+      </select>
+
+      <label>Price (₹):</label>
+      <input type="number" placeholder="Enter price" required>
+
+      <label>Upload Image:</label>
+      <input typ
